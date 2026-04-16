@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal blog sharing multimedia course knowledge.">
+    <title>個人部落格 - 多媒體與數位科技</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- html2pdf for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Ambient Background Effects -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <!-- Navigation Area -->
+    <nav class="navbar">
+        <div class="logo">MyBlog<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">首頁</a></li>
+            <li><a href="#article">課程文獻</a></li>
+            <li><a href="#location">關於位置</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>多媒體設計與應用<span>探索數位世界的無限可能</span></h1>
+            <p>紀錄靈感，傳遞價值。結合最新的網際網路傳遞技術與多媒體基礎，帶領您進入流暢的數位互動體驗。</p>
+            <a href="#article" class="btn">閱讀專題文獻</a>
+        </div>
+        <div class="hero-image">
+            <img src="file:///C:/Users/arthu/.gemini/antigravity/brain/a15e9cdc-2854-47e0-838a-e31fc60051d3/multimedia_hero_1776349990724.png" alt="Multimedia Abstract Concepts">
+        </div>
+    </section>
+
+    <!-- PDF Document Section -->
+    <section id="article" class="article-section">
+        <div class="section-header">
+            <h2>多媒體專題研究</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 20px;">以下文件為課程學習成果，您可以直接閱讀或將其匯出為 PDF 檔案。</p>
+            <button id="downloadPdfBtn" class="btn btn-outline" onclick="downloadPDF()">下載為 PDF 文件</button>
+        </div>
+        
+        <!-- The visual PDF Document Container -->
+        <div class="document-wrapper">
+            <div id="pdf-content" class="document">
+                <div class="doc-header">
+                    <h3>多媒體系統基礎建置與應用探索</h3>
+                    <p class="author">技術專題報告 | Personal Blog</p>
+                </div>
+                
+                <div class="doc-body">
+                    <h4>一、前身與發展現況</h4>
+                    <p>這課程學習以基礎應用在類比和數位媒體。在目前的數位科技環境中，錄影機、3D 虛擬實境 (VR) 錄影技術以及人手一台的智慧型手機 (Smartphone)，均已能夠極度方便地進行高品質錄影。這些工具大幅降低了多媒體創作的門檻。</p>
+
+                    <h4>二、網路傳遞與多元服務</h4>
+                    <p>除此之外，我們同時也能夠輕易地藉由各種「影音主機寄存服務」（Hosting Services），以及便捷的高速通訊網路，將影音資料無遠弗屆地向全球傳遞。這種去中心化的特性，進一步促成了多媒體的高速發展。</p>
+
+                    <h4>三、數位資料處理與特徵</h4>
+                    <p>本課程將深入探討多媒體的各種特性，以及數位多媒體資料的壓縮與處理技術。主要解析之格式與技術包含：</p>
+                    <ul>
+                        <li><strong>MP3：</strong> 主流的音訊資料壓縮技術。</li>
+                        <li><strong>JPEG：</strong> 高效率的靜態影像壓縮標準。</li>
+                        <li><strong>MPEG：</strong> 應用廣泛的動態影音壓縮技術。</li>
+                    </ul>
+
+                    <h4>四、進階應用領域</h4>
+                    <p>理解了上述基礎特徵與壓縮方式後，數位多媒體資料更進一步被廣泛應用於多項前瞻領域，例如：</p>
+                    <ul>
+                        <li>數位資料的<strong>索引和檢索 (Indexing and Retrieval)</strong>：使巨量資料具備可搜尋性。</li>
+                        <li><strong>超媒體 (Hypermedia)</strong> 資訊架構的建立。</li>
+                        <li><strong>動畫設計 (Animation Design)</strong>。</li>
+                        <li>整合性的<strong>網際網路 (Internet)</strong> 應用服務。</li>
+                    </ul>
+
+                    <h4>五、結論與展望</h4>
+                    <p>綜合以上，本課程的最終目標，是期盼學生在結業後擁有這項專長能力，能夠獨立「設計且實現多媒體系統」的基礎建置，成為具有實踐力與創新思維的多媒體人才。</p>
+                </div>
+
+                <div class="doc-footer">
+                    <p>- Page 1 -</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location / Map Section -->
+    <section id="location" class="location-section">
+        <div class="section-header">
+            <h2>我在這裡：台北大學</h2>
+            <p style="color: var(--text-secondary); margin-top: 10px;">National Taipei University (NTPU)</p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.433431109405!2d121.36881771146743!3d24.945802041539207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681e18cd94dbfd%3A0x633908c691374ac!2sNational%20Taipei%20University!5e0!3m2!1sen!2stw!4v1713280000000!5m2!1sen!2stw" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Personal Blog. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
